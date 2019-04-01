@@ -1,21 +1,22 @@
-/* 6kyu: Format a string of names like 'Bart, Lisa & Maggie'.
-
-Given: an array containing hashes of names
-
-Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
-
-Example:
-list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+// 6kyu
+// Format a string of names like 'Bart, Lisa & Maggie'.
+//
+// Given: an array containing hashes of names
+//
+// Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
+//
+// Example:
+// list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
 // returns 'Bart, Lisa & Maggie'
-
-list([ {name: 'Bart'}, {name: 'Lisa'} ])
+//
+// list([ {name: 'Bart'}, {name: 'Lisa'} ])
 // returns 'Bart & Lisa'
-
-list([ {name: 'Bart'} ])
+//
+// list([ {name: 'Bart'} ])
 // returns 'Bart'
-
-list([])
-// returns '' */
+//
+// list([])
+// returns ''
 
 function list(names){
   const getNameValues = names.map(function(object) {
