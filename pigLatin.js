@@ -22,3 +22,9 @@ function pigIt(str){
   })
   return pigPhrase.join(" ")
 }
+
+// way cleaner version I found after my solution using regex
+
+function pigIt(str){
+  return str.replace(/(\w)(\w*)(\s|$)/g, "\$2\$1ay\$3")
+}
